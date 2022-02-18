@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+header {
+    margin: 15px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 8px;
+}
+.recheio {
+    margin-top: 8px;
+}
+.passos {
+    width: 600px;
+}
+/* .modo {
+    margin-top: 8px;
+} */
+ol {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+.imagem{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.secao1 {
+    border: 1px black solid;
+    width: 50%;
+    background-color: bisque;
+}
+.modo-passos {
+    border: 1px black solid;
+    width: 50%;
+    background-color: aquamarine;
+}
+.pai {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+
