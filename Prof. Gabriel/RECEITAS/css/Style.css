@@ -1,0 +1,61 @@
+body {
+    height: 100%;
+}
+h1 {
+    margin: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+.start {
+    background-color: yellow;
+    margin-bottom: 10px;
+    height: 50%;
+}
+h2 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 30px;
+}
+.recheio {
+    margin-top: 8px;
+}
+.passos {
+    width: 600px;
+}
+/* .modo {
+    margin-top: 8px;
+} */
+ol {
+    font-size: 20px;
+}
+ul {
+    font-size: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+.imagem{
+    text-align: center;
+}
+img {
+    border: 5px black solid;
+}
+.secao1 {
+    border: 1px black solid;
+    width: 50%;
+    background-color: orange;
+}
+.modo-passos {
+    border: 1px black solid;
+    width: 50%;
+    background-color: #ff0500;
+}
+.pai {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+.conteudo {
+    padding: 40px;
+}
+

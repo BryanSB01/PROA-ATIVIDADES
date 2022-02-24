@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    background-color: #000;
+    position: relative;
+}
+.container {
+    width: 938px;
+    position: absolute;
+    top: 300px;
+    left: 504.5px;
+}
+img {
+    border: 5px rgb(255, 255, 255) solid;
+    width: 300px;
+    height: 300px;
+}
+video {
+    border: 5px rgb(255, 255, 255) solid;
+    width: 300px;
+    height: 300px;
+}
