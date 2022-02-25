@@ -1,0 +1,38 @@
+* {
+    background-color: black;
+}
+.container {
+    height: 150px;
+    width: 959.5px;
+    display: flex;
+    position: relative;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+.container > h2 {
+    color: green;
+    font-size: 30px;
+    position: absolute;
+    top:5px;
+    left: 110px;
+}
+.container > p {
+    color: blue;
+    font-size: 30px;
+    position: absolute;
+    top:5px;
+    left: 110px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+}
+.gabi {
+    border: 3px green solid;
+}
+.bryan {
+    border: 3px blue solid;
+}
