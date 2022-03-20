@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 24</title>
+</head>
+<body>
+    <script>
+        var javali1 = parseInt(prompt("Informe a idade do primero Javali:"));
+        var javali2 = parseInt(prompt("Informe a idade do segundo Javali:"));
+        var girafa1 = parseInt(prompt("Informe a idade da primeira Girafa:"));
+        var girafa2 = parseInt(prompt("Informe a idade da segunda Girafa:"));
+        var javaliv;
+        var javalin;
+        var girafav;
+        var girafan;
+
+        if(javali1 > javali2){
+            javaliv = javali1;
+            javalin = javali2
+        } else{
+            javaliv = javali2;
+            javalin = javali1;
+        }
+        if(girafa1 > girafa2){
+            girafav = girafa1;
+            girafan = girafa2
+        } else{
+            girafav = girafa2;
+            girafan = girafa1;
+        }
+        
+        var soma = javaliv + girafan;
+        var multiplicacao = javalin * girafav;
+
+        alert(soma)
+        alert(multiplicacao)
+    </script>
+</body>
+</html>

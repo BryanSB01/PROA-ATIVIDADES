@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt("Informe o primeiro número:")
+        var n2 = prompt("Informe o segundo número:")
+        var n3 = prompt("Informe o terceiro número:")
+        var n4 = prompt("Informe o quarto número:")
+        var n5 = prompt("Informe o quinto número:")
+        var n6 = prompt("Informe o sexto número:")
+        var n7 = prompt("Informe o sétimo número:")
+        var n8 = prompt("Informe o oitavo número:")
+        var n9 = prompt("Informe o nono número:")
+        var n10 = prompt("Informe o décimo número:")
+        var n11 = prompt("Informe o décimo primeiro número:")
+        var n12 = prompt("Informe o décimo segundo número:")
+        var n13 = prompt("Informe o décimo terceiro número:")
+        var n14 = prompt("Informe o décimo quarto número")
+        var n15 = prompt("Informe o décimo quinto número:")
+        var n16 = prompt("Informe o décimo sexto número:")
+        var n17 = prompt("Informe o décimo sétimo número:")
+        var n18 = prompt("Informe o décimo oitavo número:")
+        var n19 = prompt("Informe o décimo nono número:")
+        var n20 = prompt("Informe o vigésimo número:")
+        var maiorNum = Math.max(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20);
+        var menorNum = Math.min(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20);
+        alert("O menor número é: " + menorNum);
+        alert("O maior número é: " + maiorNum);
+        
+        /* if(n1 > n2 && n1 > n3 && n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n1;
+        }else if(n2 > n1,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n2;
+        }else if(n3 > n1,n2,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n3;
+        }else if(n4 > n1,n2,n3,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n4;
+        }else if(n5 > n1,n2,n3,n4,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n5;
+        }else if(n6 > n1,n2,n3,n4,n5,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n6;
+        }else if(n7 > n1,n2,n3,n4,n5,n6,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n7;
+        }else if(n8 > n1,n2,n3,n4,n5,n6,n7,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n8;
+        }else if(n9 > n1,n2,n3,n4,n5,n6,n7,n8,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n9;
+        }else if(n10 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n10;
+        }else if(n11 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n12,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n11;
+        }else if(n12 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n13,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n12;
+        }else if(n13 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n14,n15,n16,n17,n18,n19,n20){
+            maiorNum = n13;
+        }else if(n14 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n15,n16,n17,n18,n19,n20){
+            maiorNum = n14;
+        }else if(n15 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n16,n17,n18,n19,n20){
+            maiorNum = n15;
+        }else if(n16 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n17,n18,n19,n20){
+            maiorNum = n16;
+        }else if(n17 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n18,n19,n20){
+            maiorNum = n17;
+        }else if(n18 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n19,n20){
+            maiorNum = n18;
+        }else if(n19 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n20){
+            maiorNum = n19;
+        }else if(n20 > n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19){
+            maiorNum = n20;
+        } */
+       /*  alert(maiorNum + " é o maior número.") */
+    </script>
+</body>
+</html>

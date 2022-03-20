@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("Informe a primeira nota:"));
+        var nota2 = parseFloat(prompt("Informe a segunda nota:"));
+        var nota3 = parseFloat(prompt("Informe a nota da avaliação optativa:"));
+        var media;
+
+        if(nota1 < nota2 && nota1 < nota3){
+            alert("Nota 1 substituída por Nota 3. Sua média é: " + (media = (nota2 + nota3)/2));
+        } else if(nota2 < nota1 && nota2 < nota3){
+            alert("Nota 2 substituída por Nota 3. Sua média é: " + (media = (nota1 + nota3)/2));
+        } else if(nota3 < nota1 && nota3 < nota2){
+            alert("Nota 3 não usada. Sua média é: " + (media = (nota1 + nota2)/2));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+</head>
+<body>
+    <script>
+        var nLados = parseInt(prompt("Informe a quantidade de lados do polígono:"));
+        var perimetro;
+        var area;
+        if(nLados == 3){
+            var lado1 = parseInt(prompt("Informe o primeiro lado:"));
+            var lado2 = parseInt(prompt("Informe o segundo lado:"));
+            var lado3 = parseInt(prompt("Informe o terceiro lado:"));
+            perimetro = lado1 + lado2 + lado3;
+            alert("Triângulo. Perimetro = " + perimetro);
+        } else if(nLados == 4){
+            var lado1 = parseInt(prompt("Informe o primeiro lado:"));
+            area = lado1 ** 2;
+            alert("Quadrado: Área = " + area);
+        } else if(nLados == 5){
+            alert("Pentágono");
+        } else if(nLados < 3){
+            alert("NÃO É UM POLÍGONO!")
+        } else if(nLados > 5){
+            alert("POLÍGONO NÃO IDENTIFICADO!")
+        }
+
+    </script>
+</body>
+</html>

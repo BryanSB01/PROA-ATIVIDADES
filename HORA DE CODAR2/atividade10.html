@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        var n1 = parseInt(prompt("Informe o primeiro número:"));
+        var n2 = parseInt(prompt("Informe o segundo número:"));
+        var n3 = parseInt(prompt("Informe o terceiro número:"));
+        var n4 = parseInt(prompt("Informe o quarto número:"));
+        var media = 0;
+        var n1soma;
+        var n2soma;
+        var n3soma;
+        var n4soma;
+
+        if(n1 > -1 && n1 < 11){
+            n1soma = n1;
+        }
+        if(n2 > -1 && n2 < 11){
+            n2soma = n2;
+        }
+        if(n3 > -1 && n3 < 11){
+            n3soma = n3;
+        }
+        if(n4 > -1 && n4 < 11){
+            n4soma = n4;
+        }
+
+        media = (n1soma + n2soma + n3soma + n4soma)/4;
+
+        if(media > 5){
+            alert("Você passou no teste!")
+        } else {
+            alert("Tente novamente!")
+        }
+    </script>
+</body>
+</html>

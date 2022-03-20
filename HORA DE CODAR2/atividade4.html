@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <script>
+        var n1 = parseInt(prompt("Informe um número:"));
+        var n2 = parseInt(prompt("Informe outro número:"));
+        var n3 = parseInt(prompt("Informe outro número:"));
+        var maior1
+        var maior2
+        var menor1
+
+        if (n1 > n2 && n1 > n3){
+            maior1 = n1;
+        } else if(n2 > n1 && n2 > n3){
+            maior1 = n2;
+        } else if(n3 > n1 && n3 > n2){
+            maior1 = n3;
+        }
+
+        if (n1 < n2 && n1 < n3){
+            menor1 = n1;
+        } else if(n2 < n1 && n2 < n3){
+            menor1 = n2;
+        } else if(n3 < n1 && n3 < n2){
+            menor1 = n3;
+        }
+
+        if (n1 > menor1 && n1 < maior1){
+            maior2 = n1;
+        } else if(n2 > menor1 && n2 < maior1){
+            maior2 = n2;
+        } else if(n3 > menor1 && n3 < maior1){
+            maior2 = n3;
+        }
+        
+        var soma = maior1 + maior2;
+        console.log(maior1, maior2)
+        alert(soma);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+<body>
+    <script>
+        var combustivel = 2.90;
+        var kmInicial = prompt("Informe a quilometragem inicial:");
+        var kmFinal = prompt("Informe a quilometragem final:");
+        var litros = prompt("Informe quantos litros foram gastos:");
+        var vPass = prompt("Informe o valor recebido dos passageiros:");
+        var mConsumo = (kmFinal - kmInicial) / litros;
+        var lDia = vPass - (litros * combustivel)
+
+        alert("Você roda " + mConsumo + "km por litros.")
+        alert("Você lucra R$" + lDia + "por dia.")
+    </script>
+</body>
+</html>
