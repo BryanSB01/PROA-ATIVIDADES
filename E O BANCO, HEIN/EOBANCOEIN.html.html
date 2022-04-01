@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+	<script>
+		var saldo = 10000.00; //Float
+		var usuario = prompt("Informe seu nome:");
+		alert(`Olá ${usuario}, é um prazer ter você por aqui!`);
+		var senha = parseInt(prompt("Informe sua senha."));
+			if(senha == 3589){
+		function inicio() {
+				var escolha = parseInt(prompt('Selecione uma opção 1.) Saldo 2.) Extrato 3.) Saque 4.) Depósito 5.) Transferência 6.) Sair'));
+
+				if (escolha === 1) {
+					ver_saldo();
+				} else if (escolha === 2) {
+					ver_extrato();
+				} else if (escolha === 3) {
+					fazer_saque();
+				} else if (escolha === 4) {
+					fazer_deposito();
+				} else if(escolha === 5) {	
+					transferencia();	
+				} else if(escolha === 6) {
+					sair();	
+				} else {
+					erro();
+				}
+		}		
+
+		function ver_saldo() {
+				alert('Seu saldo atualizado é: ' + saldo);
+				inicio();
+		}
+
+		function fazer_deposito() {	
+			var deposito = parseFloat(prompt('Qual o valor para depósito?'));
+			// Not a Number -> Isso é um não-número?
+			if (isNaN(deposito) || deposito === '') {
+				alert('Por favor, informe um número!');
+				fazer_deposito();
+			} else if(deposito <= 0){
+				alert('Operação não autorizada!');
+				fazer_deposito();
+			} else {
+				saldo = saldo + deposito;
+                //saldo += deposito; 
+
+				ver_saldo();
+			}
+		}
+
+		function fazer_saque() {
+			var saque = parseFloat(prompt('Qual o valor para saque?'));
+			if (isNaN(saque) || saque === '') {
+				alert('Por favor, informe um número:');
+				fazer_saque();
+			} else if(saque > saldo){
+				alert("Operação não autorizada!");
+				inicio();
+		 	} else if(saque <= 0){
+				alert("Operação não autorizada!");
+				fazer_saque();
+		 	} else {
+				saldo -= saque;
+				
+				ver_saldo();
+			}
+		}
+
+		function erro() {
+			alert('Por favor, informe um número entre 1 e 4');
+			inicio();
+		}
+
+		function sair() {
+			var confirma = confirm('Você deseja sair?');
+			if (confirma) {
+				alert(`Foi um prazer ter você aqui ${usuario}!`);
+				window.close();
+			} else {
+                
+				inicio();
+			}
+		}
+
+		function ver_extrato() {
+			document.write("Você depositou R$15.000,00 no dia 14/02/2022.");
+			document.write("<br>");
+			document.write("Você depositou R$15.000,00 no dia 18/02/2022.");
+			document.write("<br>");
+			document.write("Você depositou R$15.000,00 no dia 20/02/2022.");
+		}
+
+		function transferencia() {
+			var conta = parseInt(prompt("Informe a conta para transferir"))
+			var valor_transf = parseFloat(prompt("Informe o valor da tranferência"));
+			if(valor_transf <= 0){
+				alert("Tranferência não autorizada!");
+				transferencia();
+			}else{
+				saldo -= valor_transf;
+				alert("Tranferência realizada com sucesso. Seu saldo atual é: " + saldo);
+				inicio();
+			}
+		}
+	}
+		inicio();
+    </script>
+</head>
+    <body>
+
+    </body>
+	</html>
